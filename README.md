@@ -1,1 +1,1 @@
-# resume-website
+# personal-website

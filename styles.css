@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Bogart;
+    src: url("Bogart.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: rgb(255, 255, 255);
+}
+
+/* Page hero styling */
+.page-hero {
+    display: flex;
+    flex-direction: column;
+
+    cursor: default;
+    
+    font-family: Bogart;
+}
+
+.hero-main-text {
+    font-size: 64px;
+    font-weight: 400;
+    height: 70px;
+
+    color: #3478F7;
+
+    z-index: 1;
+}
+
+.hero-sub-text {
+    padding-left: 4px;
+
+    font-size: 24px;
+    color: #919191;
+}
+
+/* Waving emoji styling */
+.wave {
+    background: transparent;
+    border: none;
+
+    font-size: 0.8em;
+
+    transform: rotate(0deg);
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    cursor: pointer;
+}
+
+
+.wave:not(:active) {
+    animation: pop 0.5s ease-in-out;
+}
+
+.emoji.rotate {
+    animation: rotation 1s infinite ease-in-out;
+}
+
+/* Waving emoji animation keyframes */
+@keyframes rotation {
+    0%   { transform: rotate(0deg);  }
+    50%  { transform: rotate(25deg); }
+    100% { transform: rotate(0deg);  }
+}
+
+@keyframes pop {
+    50%  { transform: scale(1.4); }
+    100% { transform: scale(1.0); }
+}
