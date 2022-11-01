@@ -170,7 +170,6 @@ a {
     
 }
 
-.icon {
-    background: linear-gradient(45deg, #4993f3, #56CCF2);
-    color: black;
+.link {
+    color: #45b5ff;
 }
