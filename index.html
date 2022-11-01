@@ -8,17 +8,60 @@
     <title>Gabe De Lappe</title>
 </head>
 <body>
-    <div class="page-hero">
-        <div class="hero-main-text">
-            Hey there. 
-            <button class="wave"><div class="emoji">👋</div></button>
+    <div class="page-content">
+        <div class="left">
+            <h2></h2>
         </div>
-        <div class="hero-sub-text">
-            <p>Welcome to my page.</p>
+        <div class="right">
+            <div class="tabs">
+                <button class="tab tab-selected" onclick="openCard(0)">about</button>
+                <button class="tab" onclick="openCard(1)">skills</button>
+                <button class="tab" onclick="openCard(2)">projects</button>
+                <button class="tab" onclick="openCard(3)">connect!</button>
+            </div>
+            <div class="cards">
+                <div id="about" class="card card-selected">
+                    <div class="card-head">
+                        <h2>About</h2>
+                    </div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+                <div id="skills" class="card">
+                    <div class="card-head">
+                        <h2>Skills</h2>
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="card">
+                    <div class="card-head">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+                <div id="links" class="card">
+                    <div class="card-head">
+                        <h2>Connect</h2>
+                    </div>
+                    <div class="card-body">
+                        Check out my links:
+                        <ul>
+                            <li><a class="link" href="https://github.com/Couches" target="_blank"><ion-icon name="logo-github" class="icon"></ion-icon></a></li>
+                            <li><a class="link" href="https://www.linkedin.com/in/robert-de-lappe-800a4a234/" target="_blank"><ion-icon name="logo-linkedin" class="icon"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="javascript.js"></script>
 </body>
 </html>
