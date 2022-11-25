@@ -9,110 +9,67 @@
 </head>
 <body>
     <div class="page-content">
-        <div class="left">
-            <p></p>
+        <div class="page-header">
+            <h3>Hey, I'm Robert De Lappe 👋</h3>
+            <p>student, passionate programmer, proud dog dad</p>
         </div>
-        <div class="right">
-            <div class="tabs">
-                <button class="tab tab-selected" onclick="openCard(0)">about</button>
-                <button class="tab" onclick="openCard(1)">skills</button>
-                <button class="tab" onclick="openCard(2)">projects</button>
-                <button class="tab" onclick="openCard(3)">connect!</button>
+        
+        <button class="drop" onclick="toggleDropdown(0)">
+            About
+            <div class="drop-content">
+                <o  class="category">What I'm good at</o>
+                <ul>
+                    <li>problem solving</li>
+                    <li>paying attention to detail</li>
+                    <li>working in teams</li>
+                    <li>multi-tasking</li>
+                    <li>effective learning</li>
+                </ul>
             </div>
-            <div class="cards">
-                <div id="about" class="card card-selected">
-                    <div class="card-head">
-                        <p>About</p>
-                    </div>
-                    <div class="card-body card-selected">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Sunt nisi impedit veniam nostrum.</p>
-                        <p>Saepe possimus neque eaque aliquid.</p>
-                        <p>Vero soluta praesentium laudantium voluptatum?</p>
-                        <p>Possimus quam velit dolores deserunt.</p>
-                    </div>
-                </div>
-                <div id="skills" class="card">
-                    <div class="card-head">
-                        <p>Skills</p>
-                        
-                    </div>
-                    <div class="card-body">
-                        <p>Languages</p>
-                        <ul class="languages">
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="projects" class="card">
-                    <div class="card-head">
-                        <p>Projects</p>
-                    </div>
-                    <div class="card-body">
-                        <div class="project-grid">
-                            <div class="grid-item">
-                                <div class="grid-title">
-                                    Project
-                                </div>
-                                <div class="grid-body">
-                                    Project Info
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-title">
-                                    Project
-                                </div>
-                                <div class="grid-body">
-                                    Project Info
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-title">
-                                    Project
-                                </div>
-                                <div class="grid-body">
-                                    Project Info
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-title">
-                                    Project
-                                </div>
-                                <div class="grid-body">
-                                    Project Info
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="links" class="card">
-                    <div class="card-head">
-                        <p>Connect</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Check out my links:</p>
-                        <ul class="links">
-                            <li><a class="link" href="https://github.com/Couches" target="_blank"><ion-icon name="logo-github" class="icon"></ion-icon></a></li>
-                            <li><a class="link" href="https://www.linkedin.com/in/robert-de-lappe-800a4a234/" target="_blank"><ion-icon name="logo-linkedin" class="icon"></ion-icon></a></li>
-                        </ul>
-
-                        <p>
-                            <br>Think I might be a good fit
-                            <br>at your company? 
-                            <br>
-                            <br>Shoot me an email at:
-                            <br><a class="link" href="mailto:robertgdel@gmail.com">robertgdel@gmail.com</a>
-                        </p>
-                    </div>
-                </div>
+            <div class="drop-content">
+                <o  class="category">What I'm interested in</o>
+                <ul>
+                    <li>cutting edge software solutions</li>
+                    <li>new technologies</li>
+                    <li>creating software with large influence</li>
+                    <li>working with like-minded people to learn from</li>
+                </ul>
+            </div>
+        </button>
+        <button class="drop" onclick="toggleDropdown(1)">
+            Technologies
+            <div class="drop-content">
+                <p  class="category">Core Languages</p>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </button>
+        <button class="drop" onclick="toggleDropdown(2)">
+            Projects
+            <div class="drop-content">
+                <p class="category">Generray</p>
+                <p>generate various types of arrays using certain settings for extensive function testing in numerous languages</p>
+                <br>
+                <p class="category">Cast</p>
+                <p>take in natural language inputs containing any measurements, then instantly convert to a different measurement, based on the information given by the user</p>
+                <p>Many others on the back burner...</p>
+            </div>
+        </button>
+        <div class="footer">
+            <p>Think I might be a good addition at your company?</p>
+            <p>Don't hesitate to shoot me a message!</p>
+            <div class="links">
+                <a class="yellow" href="https://github.com/Couches" target="_blank">github</a>
+                <a class="yellow" href="https://www.linkedin.com/in/robert-de-lappe-800a4a234/" target="_blank">linkedin</a>
+                <a class="yellow" href="mailto:robertgdel@gmail.com" target="_blank">email</a>
+                <a class="yellow" href="https://www.linkedin.com/in/robert-de-lappe-800a4a234/" target="_blank">resume</a>
             </div>
         </div>
     </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="javascript.js"></script>
 </body>
 </html>
