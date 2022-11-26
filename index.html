@@ -10,38 +10,58 @@
 <body>
     <div class="page-content">
         <div class="page-header">
-            <h3>Hey, I'm Robert De Lappe 👋</h3>
-            <p>student, passionate programmer, proud dog dad</p>
+            <h3>Hey, I'm Robert 👋</h3>
+            <p>student, passionate programmer, dog dad</p>
         </div>
         
-        <button class="drop" onclick="toggleDropdown(0)">
-            About
+        <button class="drop expand" onclick="toggleDropdown(0)">
+            about
             <div class="drop-content">
-                <o  class="category">What I'm good at</o>
+                <p class="category">bio</p>
+                <div class="bio">
+                    <p>Ever since I grew up messing around with making simulations on scratch.mit.edu, mods for games like Minecraft, and websites with my Mom, I've grown intrigued with everything to do with software development and design.</p>
+                    <p>I love making great looking websites with beautiful, intuitive design, for an even better user experience. I'm interested in learning more about working in a setting with people who share the same mindset as myself.</p>
+                    <p>Currently, I am studying at <span class="yellow">Bellevue College</span>, pursuing my associate's degree to transfer to the <span class="yellow">University of Washington</span> in 2024.</p>
+                </div>
+            </div>
+            <div class="drop-content">
+                <p  class="category">skills</p>
                 <ul>
                     <li>problem solving</li>
-                    <li>paying attention to detail</li>
+                    <li>attention to detail</li>
                     <li>working in teams</li>
+                    <li>thriving under pressure</li>
                     <li>multi-tasking</li>
-                    <li>effective learning</li>
+                    <li>effective learner</li>
                 </ul>
             </div>
             <div class="drop-content">
-                <o  class="category">What I'm interested in</o>
+                <p  class="category">interests</p>
                 <ul>
                     <li>cutting edge software solutions</li>
-                    <li>new technologies</li>
-                    <li>creating software with large influence</li>
-                    <li>working with like-minded people to learn from</li>
+                    <li>cool new technology</li>
+                    <li>working and learning from like-minded people</li>
+                </ul>
+            </div>
+            <div class="drop-content">
+                <p  class="category">other things I think are cool... <span class="sub-text">(that you may not care about)</span></p>
+                <ul>
+                    <li>the art of origami</li>
+                    <li>mountains of colorado</li>
+                    <li>electric and acoustic guitar</li>
+                    <li>bonsai trees</li>
+                    <li>architecture</li>
+                    <li>spicy foods</li>
                 </ul>
             </div>
         </button>
         <button class="drop" onclick="toggleDropdown(1)">
-            Technologies
+            technologies
             <div class="drop-content">
-                <p  class="category">Core Languages</p>
+                <p  class="category">core technologies</p>
                 <ul>
-                    <li>Java</li>
+                    <li class="yellow">Java</li>
+                    <li class="yellow">Git/GitHub</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -49,19 +69,21 @@
             </div>
         </button>
         <button class="drop" onclick="toggleDropdown(2)">
-            Projects
+            projects
             <div class="drop-content">
-                <p class="category">Generray</p>
+                <p class="category">generray</p>
                 <p>generate various types of arrays using certain settings for extensive function testing in numerous languages</p>
-                <br>
-                <p class="category">Cast</p>
+                <div class="br"></div>
+                <p class="category">cast</p>
                 <p>take in natural language inputs containing any measurements, then instantly convert to a different measurement, based on the information given by the user</p>
-                <p>Many others on the back burner...</p>
+                <div class="br"></div>
+                <p class="yellow">probably a million more on the back burner...</p>
             </div>
         </button>
         <div class="footer">
-            <p>Think I might be a good addition at your company?</p>
-            <p>Don't hesitate to shoot me a message!</p>
+            <p>think I might be a good addition at your company?</p>
+            <p>don't hesitate to shoot me a message!</p>
+            <p class="sub-text">Robert De Lappe</p>
             <div class="links">
                 <a class="yellow" href="https://github.com/Couches" target="_blank">github</a>
                 <a class="yellow" href="https://www.linkedin.com/in/robert-de-lappe-800a4a234/" target="_blank">linkedin</a>

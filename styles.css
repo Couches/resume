@@ -9,7 +9,8 @@
 }
 
 :root {
-
+    --light-blue: #84D6EC;
+    --blue: #23c1ff;
 }
 
 * {
@@ -28,6 +29,10 @@ body {
     justify-content: center;
 }
 
+.br {
+    height: 12px;
+}
+
 .yellow {
     color: #EF9C40;
 }
@@ -40,12 +45,19 @@ body {
     color: #B3E053;
 }
 
+.sub-text {
+    color: #62635c;
+    font-size: 0.9em;
+}
+
 .page-header {
     font-size: 22px;
+    margin-bottom: 12px;
 }
 
 .page-content {
     width: 850px;
+    height: 100vh;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -58,7 +70,7 @@ body {
     gap: 16px;
 }
 
-.links > a {
+a {
     font-weight: 400;
     text-decoration: underline;
     font-style: italic;
@@ -84,8 +96,16 @@ body {
 
 .drop::before {
     font-family: Source-Code-Pro;
-    color: #84D6EC;
+    color: var(--blue);
     content: "[+]";
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
 .expand::before {
@@ -100,7 +120,7 @@ body {
 .category {
     font-size: 20px;
 
-    color: #84D6EC;
+    color: var(--blue);
 }
 
 .drop-content > ul {
@@ -111,7 +131,14 @@ body {
 
 .drop-content > ul > li::before {
     content: "\2022";
-    color: #84D6EC;
+    color: var(--blue);
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.drop-content > ul > .yellow::before {
+    content: "\26B9";
+    color: #EF9C40;
     font-size: 20px;
     margin-right: 8px;
 }
